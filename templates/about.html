@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | QSAR Toxicity Predictor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<!-- ================================================= -->
+<!-- Navbar -->
+<!-- ================================================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark shadow">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="/">
+
+<i class="bi bi-capsule"></i>
+
+Androgen Receptor Toxicity Predictor
+
+</a>
+
+<button class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="navbar">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="/">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="/model">Model</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="/about">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="/contact">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- ================================================= -->
+<!-- Hero -->
+<!-- ================================================= -->
+
+<section class="hero">
+
+<div class="container">
+
+<h1>
+
+About This Platform
+
+</h1>
+
+<p>
+
+An ML-assisted QSTR platform for predicting molecular toxicity
+from chemical structures represented as SMILES.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- About -->
+<!-- ================================================= -->
+
+<div class="container mt-5">
+
+<div class="card shadow-lg p-4">
+
+<h2>
+
+Project Overview
+
+</h2>
+
+<p>
+
+This web application provides an easy-to-use interface for predicting
+the toxicity of small molecules using machine learning.
+
+Users simply enter a SMILES string, and the platform validates the
+structure, generates molecular descriptors/fingerprints, and predicts AR 
+toxicity using a trained QSTR model.
+
+</p>
+
+<p>
+
+Besides toxicity prediction, the platform also calculates several
+physicochemical properties useful in drug discovery such as molecular
+weight, LogP, TPSA, hydrogen bond donors/acceptors, Lipinski Rule of
+Five evaluation, and additional structural descriptors.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ================================================= -->
+<!-- Features -->
+<!-- ================================================= -->
+
+<div class="container mt-5">
+
+<h2 class="text-center mb-4">
+
+Platform Features
+
+</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="property-card">
+
+<h1>
+
+🧬
+
+</h1>
+
+<h5>
+
+SMILES Validation
+
+</h5>
+
+<p>
+
+Checks whether the submitted SMILES represents a chemically valid
+molecule using RDKit.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="property-card">
+
+<h1>
+
+🤖
+
+</h1>
+
+<h5>
+
+Machine Learning Prediction
+
+</h5>
+
+<p>
+
+Predicts molecular toxicity using a QSTR model trained on
+ChEMBL database data.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="property-card">
+
+<h1>
+
+📊
+
+</h1>
+
+<h5>
+
+Molecular Properties
+
+</h5>
+
+<p>
+
+Displays important molecular descriptors and drug-likeness
+properties.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================================================= -->
+<!-- Workflow -->
+<!-- ================================================= -->
+
+<div class="container mt-5">
+
+<div class="card shadow-lg p-4">
+
+<h2>
+
+Prediction Workflow
+
+</h2>
+
+<ol>
+
+<li>Enter a SMILES string.</li>
+
+<li>Validate molecular structure using RDKit.</li>
+
+<li>Generate molecular fingerprint/descriptors.</li>
+
+<li>Preprocess descriptors.</li>
+
+<li>Apply trained QSTR model.</li>
+
+<li>Predict whether a molecule is toxic or not.</li>
+
+<li>Display molecular properties and drug-likeness.</li>
+
+</ol>
+
+</div>
+
+</div>
+
+<!-- ================================================= -->
+<!-- Technologies -->
+<!-- ================================================= -->
+
+<div class="container mt-5">
+
+<div class="card shadow-lg p-4">
+
+<h2>
+
+Technologies Used
+
+</h2>
+
+<div class="row text-center">
+
+<div class="col-md-2">
+
+<h1>🐍</h1>
+
+Python
+
+</div>
+
+<div class="col-md-2">
+
+<h1>🧪</h1>
+
+RDKit
+
+</div>
+
+<div class="col-md-2">
+
+<h1>⚡</h1>
+
+Flask
+
+</div>
+
+<div class="col-md-2">
+
+<h1>🤖</h1>
+
+Scikit-Learn
+
+</div>
+
+<div class="col-md-2">
+
+<h1>📊</h1>
+
+Pandas
+
+</div>
+
+<div class="col-md-2">
+
+<h1>📈</h1>
+
+NumPy
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================================================= -->
+<!-- Research -->
+<!-- ================================================= -->
+
+<div class="container mt-5">
+
+<div class="card shadow-lg p-4">
+
+<h2>
+
+Research Purpose
+
+</h2>
+
+<p>
+
+This platform demonstrates how machine learning and cheminformatics
+can be integrated for rapid toxicity screening of chemical compounds.
+Such computational approaches can help prioritize molecules before
+experimental validation, reducing both cost and time during early-stage
+drug discovery.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ================================================= -->
+<!-- Disclaimer -->
+<!-- ================================================= -->
+
+<div class="container mt-5">
+
+<div class="alert alert-warning shadow">
+
+<h4>
+
+<i class="bi bi-exclamation-triangle-fill"></i>
+
+Disclaimer
+
+</h4>
+
+<p>
+
+Predictions generated by this platform are intended solely for
+research and educational purposes. They should not be used as a
+replacement for experimental validation or professional toxicological
+assessment.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ================================================= -->
+<!-- Footer -->
+<!-- ================================================= -->
+
+<footer class="mt-5">
+
+<div class="container text-center">
+
+<h5>
+
+AR Toxicity Prediction Platform
+
+</h5>
+
+<p>
+
+Developed using Flask
+
+</p>
+
+<p>
+
+© 2026 Shruti Diwase and Harsh Rander
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+```

@@ -1,0 +1,408 @@
+```css
+/* ==========================================================
+   GLOBAL
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f4f7fb;
+
+    color:#222;
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================================================
+   NAVBAR
+========================================================== */
+
+.navbar{
+
+    background:linear-gradient(90deg,#0f172a,#1e3a8a);
+
+    padding:15px;
+
+}
+
+.navbar-brand{
+
+    font-size:1.4rem;
+
+    letter-spacing:1px;
+
+}
+
+.nav-link{
+
+    color:white !important;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#7dd3fc !important;
+
+}
+
+/* ==========================================================
+ HERO
+========================================================== */
+
+.hero{
+
+    background:linear-gradient(135deg,#2563eb,#0ea5e9);
+
+    color:white;
+
+    padding:80px 20px;
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-weight:700;
+
+}
+
+.hero p{
+
+    font-size:1.2rem;
+
+    opacity:.95;
+
+}
+
+/* ==========================================================
+ CARD
+========================================================== */
+
+.card{
+
+    border:none;
+
+    border-radius:18px;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+/* ==========================================================
+ FORM
+========================================================== */
+
+.form-control{
+
+    border-radius:12px;
+
+}
+
+.btn{
+
+    border-radius:12px;
+
+}
+
+.btn-primary{
+
+    background:#2563eb;
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ==========================================================
+ EXAMPLE BUTTONS
+========================================================== */
+
+.example{
+
+    margin:5px;
+
+}
+
+/* ==========================================================
+ PREDICTION
+========================================================== */
+
+.smiles-box{
+
+    background:#eef4ff;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-family:monospace;
+
+    word-wrap:break-word;
+
+}
+
+/* ==========================================================
+ PROPERTY CARD
+========================================================== */
+
+.property-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    height:100%;
+
+}
+
+.property-card:hover{
+
+    transform:translateY(-5px);
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.property-card h6{
+
+    font-weight:600;
+
+    color:#555;
+
+}
+
+.property-card:hover h6{
+
+    color:white;
+
+}
+
+.property-card h3{
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+ MOLECULE IMAGE
+========================================================== */
+
+img{
+
+    max-width:100%;
+
+    border-radius:15px;
+
+}
+
+/* ==========================================================
+ LIST GROUP
+========================================================== */
+
+.list-group-item{
+
+    border:none;
+
+    border-bottom:1px solid #eee;
+
+}
+
+/* ==========================================================
+ FOOTER
+========================================================== */
+
+footer{
+
+    margin-top:60px;
+
+    background:#0f172a;
+
+    color:white;
+
+    padding:35px;
+
+}
+
+/* ==========================================================
+ BADGES
+========================================================== */
+
+.badge{
+
+    font-size:1rem;
+
+}
+
+/* ==========================================================
+ SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f1f1;
+
+}
+
+/* ==========================================================
+ ANIMATION
+========================================================== */
+
+.card,
+.property-card{
+
+    animation:fadeUp .7s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+ TABLET
+========================================================== */
+
+@media(max-width:992px){
+
+.hero{
+
+padding:60px 20px;
+
+}
+
+}
+
+/* ==========================================================
+ MOBILE
+========================================================== */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:2rem;
+
+}
+
+.hero p{
+
+font-size:1rem;
+
+}
+
+.property-card{
+
+margin-bottom:15px;
+
+}
+
+.navbar-brand{
+
+font-size:1.1rem;
+
+}
+
+}
+
+/* ==========================================================
+ DARK MODE SUPPORT
+========================================================== */
+
+.dark-mode{
+
+background:#111827;
+
+color:white;
+
+}
+
+.dark-mode .property-card{
+
+background:#1f2937;
+
+color:white;
+
+}
+
+.dark-mode .card{
+
+background:#1f2937;
+
+color:white;
+
+}
+
+.dark-mode .smiles-box{
+
+background:#374151;
+
+color:white;
+
+}
+```
